@@ -1,0 +1,1 @@
+# TryScope blacklist engine
