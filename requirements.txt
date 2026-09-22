@@ -1,0 +1,13 @@
+rich>=13.0.0
+httpx>=0.27.0
+requests>=2.31.0
+dnspython>=2.6.0
+pyyaml>=6.0.0
+jinja2>=3.1.0
+networkx>=3.2.0
+matplotlib>=3.8.0
+folium>=0.15.0
+python-whois>=0.9.4
+tomli>=2.0.0 ; python_version < "3.11"
+tomli-w>=1.0.0
+pytest>=7.0.0
