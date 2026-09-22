@@ -1,0 +1,53 @@
+# ===============================================================
+#  TryScope v1.0 - Configuration
+# ===============================================================
+
+[core]
+timeout_seconds   = 10
+max_workers       = 20
+cache_ttl_hours   = 24
+cache_db          = "cache/tryscope.db"
+
+[output]
+reports_dir       = "reports"
+default_format    = "all"
+auto_open_html    = false
+
+[sources]
+# Free - no API key required
+ip_api            = true
+ipwhois           = true
+rdap              = true
+internetdb        = true
+restcountries     = true
+
+# Free - optional API keys (leave blank to skip)
+abuseipdb_key     = ""
+virustotal_key    = ""
+greynoise_key     = ""
+
+[pivot]
+enabled           = true
+depth             = 2
+max_ips           = 500
+favicon_pivot     = true
+jarm_pivot        = true
+cert_pivot        = true
+dns_pivot         = true
+bgp_pivot         = true
+
+[blacklist]
+lists = [
+    "zen.spamhaus.org",
+    "bl.spamcop.net",
+    "b.barracudacentral.org",
+    "dnsbl.sorbs.net",
+    "cbl.abuseat.org",
+]
+
+[whitelist]
+ips = [
+    "127.0.0.1",
+    "8.8.8.8",
+    "1.1.1.1",
+]
